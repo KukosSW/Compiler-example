@@ -1,0 +1,60 @@
+DECLARE
+    a, b, t(10:10000), c
+BEGIN
+    a := 100 - 0;
+    WRITE a;
+
+    a := 10 - 10;
+    WRITE a;
+
+    a := 10 - 11;
+    WRITE a;
+
+    a := 15 - 10;
+    WRITE a;
+
+    b := 20 - a;
+    WRITE b;
+
+    c := a - b;
+    WRITE c;
+
+    c := b - a;
+    WRITE c;
+
+    a := 1000;
+    a := a - c;
+    WRITE a;
+
+    b := b - b;
+    WRITE b;
+
+    WRITE 0;
+
+    t(10) := 100 - 50;
+    WRITE t(10);
+
+    t(11) := t(10) - 10;
+    WRITE t(11);
+
+    t(12) := t(10) - t(11);
+    WRITE t(12);
+
+    a := 13;
+    t(a) := t(11) - t(12);
+    WRITE t(a);
+
+    b := a;
+    a := a + 1;
+    t(a) := t(b) - t(12);
+    WRITE t(a);
+
+    c := b;
+    b := a;
+    a := a + 1;
+    t(a) := t(c) - t(b);
+    WRITE t(a);
+
+    t(c) := t(c) - t(c);
+    WRITE t(c);
+END

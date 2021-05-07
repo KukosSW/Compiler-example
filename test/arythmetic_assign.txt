@@ -1,0 +1,43 @@
+DECLARE
+    tab(111:222), a, t(99:999), c
+BEGIN
+
+    a := 200;
+    tab(a) := 1;
+    c := 99;
+    tab(111) := 11;
+    tab(112) := 12;
+    tab(220) := 22;
+    tab(221) := 31;
+    tab(222) := 2;
+    t(c) := 666;
+
+    WRITE a;
+    WRITE c;
+    WRITE tab(111);
+    WRITE tab(112);
+    WRITE tab(200);
+    WRITE tab(220);
+    WRITE tab(221);
+    WRITE tab(222);
+    WRITE t(99);
+
+    WRITE 0;
+    a := tab(111);
+    WRITE a;
+    a := t(c);
+    WRITE a;
+    a := c;
+    WRITE a;
+    a := t(a);
+    WRITE a;
+    a := 200;
+    t(c) := 9999;
+    WRITE t(c);
+    tab(a) := t(c);
+    WRITE tab(a);
+    t(a) := 4444;
+    WRITE t(a);
+    tab(a) := t(a);
+    WRITE tab(a);
+END

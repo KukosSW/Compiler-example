@@ -1,0 +1,11 @@
+DECLARE
+	c
+BEGIN
+	c := 0;
+	FOR i FROM 1 TO i DO
+		c := c + i;
+	ENDFOR
+
+	WRITE c;
+
+END

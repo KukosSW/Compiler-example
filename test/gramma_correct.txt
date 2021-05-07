@@ -1,0 +1,48 @@
+DECLARE
+    a,b,c,t(2:1000), d
+
+BEGIN
+    WRITE 10;
+    READ b;
+    a := b + 10;
+    c := b * t(3);
+    d := 10;
+    a := 10 / 1;
+    b := t(100) % t(2);
+    c := d - 10;
+    [For loop]
+    FOR i FROM 2 TO a DO
+        WRITE i;
+        [Downto for lop]
+        FOR j FROM 10 DOWNTO b DO
+            WRITE j;
+            [while loop]
+            WHILE c <= 100 DO
+                c := c * 2;
+            REPEAT [repeat]
+                t(i) := t(j) % d;
+                d := d + 1;
+            UNTIL t(i) != 0;
+            ENDWHILE
+        ENDFOR
+    ENDFOR [end last for]
+
+    IF a < b THEN
+        WRITE 0;
+        IF a = 0 THEN
+            WRITE [0]0;
+        ENDIF
+    ELSE
+        WRITE 1;
+    ENDIF
+
+    IF a > b THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF b >= 0 THEN
+        READ c;
+    ENDIF
+END

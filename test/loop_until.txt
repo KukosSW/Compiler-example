@@ -1,0 +1,92 @@
+DECLARE
+    a, b, c
+BEGIN
+    a := 10;
+    REPEAT
+        WRITE a;
+    UNTIL a != 11;
+
+    REPEAT
+        WRITE a;
+    UNTIL a = 10;
+
+    REPEAT
+        WRITE a;
+    UNTIL a <= 10;
+
+    REPEAT
+        WRITE a;
+    UNTIL a >= 10;
+
+    REPEAT
+        WRITE a;
+    UNTIL a < 11;
+
+    REPEAT
+        WRITE a;
+    UNTIL a > 9;
+
+    WRITE 111;
+    c := 0;
+    b := c / a;
+    REPEAT
+        c := c + 1;
+        b := c / a;
+        WRITE b;
+        WRITE c;
+    UNTIL b != 0;
+
+    WRITE 222;
+    a := 0;
+    REPEAT
+        WRITE a;
+        a := a + 1;
+    UNTIL a = 10;
+
+    WRITE 333;
+    a := 10;
+    REPEAT
+        WRITE a;
+        a := a - 1;
+    UNTIL a <= 1;
+
+    WRITE 444;
+    a := 1;
+    REPEAT
+        WRITE a;
+        a := a * 2;
+    UNTIL a >= 10;
+
+    WRITE 555;
+    a := 10;
+    REPEAT
+        WRITE a;
+        a := a / 2;
+    UNTIL a < 1;
+
+    WRITE 666;
+    a := 1;
+    REPEAT
+        WRITE a;
+        a := a + 1;
+    UNTIL a > 10;
+
+    WRITE 777;
+    a := 1;
+    REPEAT
+        b := a * 2;
+        REPEAT
+            c := 5;
+            REPEAT
+                WRITE c;
+                c := c - 1;
+            UNTIL c = 0;
+            WRITE b;
+            b := b * 2;
+        UNTIL b > 32;
+        WRITE a;
+        a := a + 1;
+    UNTIL a >= 10;
+
+    WRITE 888;
+END

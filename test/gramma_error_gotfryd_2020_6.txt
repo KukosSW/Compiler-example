@@ -1,0 +1,6 @@
+DECLARE
+  a, b(10:20)
+BEGIN
+  b(10) := -3;
+  a := b(10);
+END

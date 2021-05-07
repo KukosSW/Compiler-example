@@ -1,0 +1,1 @@
+BLAD: Niezadeklarowana zmienna i w linii 7

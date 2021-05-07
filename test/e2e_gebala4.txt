@@ -1,0 +1,22 @@
+DECLARE
+    a, b, c, r, p, w
+BEGIN
+    READ a;
+    READ b;
+    READ c;
+    r := 1;
+    p := a % c;
+
+    WHILE b > 0 DO
+        w := b % 2;
+        IF w = 1 THEN
+            r := r * p;
+            r := r % c;
+        ENDIF
+        b := b / 2;
+        p := p * p;
+        p := p % c;
+    ENDWHILE
+
+    WRITE r;
+END

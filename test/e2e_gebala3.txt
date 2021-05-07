@@ -1,0 +1,32 @@
+DECLARE
+    n, m, r, p, d
+BEGIN
+
+    READ n;
+    d := 2;
+    m := d * d;
+
+    WHILE n >= m DO
+        p := 0;
+        r := n % d;
+        WHILE r = 0 DO
+            n := n / d;
+            p := p + 1;
+            r := n % d;
+        ENDWHILE
+
+        IF p >0 THEN
+            WRITE d;
+            WRITE p;
+        ELSE
+            d := d + 1;
+            m := d * d;
+        ENDIF
+    ENDWHILE
+
+    IF n != 1 THEN
+        WRITE n;
+        WRITE 1;
+    ENDIF
+
+END

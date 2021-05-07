@@ -1,0 +1,20 @@
+DECLARE
+    a, b, t(0:10), tab(1000:2000)
+BEGIN
+    READ a;
+    READ b;
+    READ t(b);
+
+    READ t(0);
+    READ tab(1999);
+    READ tab(a);
+
+    WRITE a;
+    WRITE b;
+    WRITE t(b);
+    WRITE 123;
+    WRITE 1234567890;
+    WRITE t(0);
+    WRITE tab(1999);
+    WRITE tab(a);
+END

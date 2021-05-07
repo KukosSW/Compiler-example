@@ -1,0 +1,6 @@
+DECLARE
+  a, b(1:20)
+BEGIN
+  a := 1;
+  a(1) := b(a);
+END

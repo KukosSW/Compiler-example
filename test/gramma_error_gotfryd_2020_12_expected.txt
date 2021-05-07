@@ -1,0 +1,1 @@
+BLAD: Nieprawidlowe uzycie zmiennej b w linii 4

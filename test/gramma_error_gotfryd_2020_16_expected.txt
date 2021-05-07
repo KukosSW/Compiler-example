@@ -1,0 +1,1 @@
+BLAD: Proba nadpisania zmiennej i typu const w linii 7

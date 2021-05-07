@@ -1,0 +1,101 @@
+DECLARE
+    a, b, c, d
+BEGIN
+
+    a := 0;
+    IF a = 0 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF a != 0 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF a < 0 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF a > 1 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF a >= 0 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    IF a <= 10 THEN
+        WRITE 1;
+    ELSE
+        WRITE 0;
+    ENDIF
+
+    WRITE 111;
+
+    a := 0;
+    IF a = 0 THEN
+        WRITE 1;
+    ENDIF
+
+    IF a != 0 THEN
+        WRITE 2;
+    ENDIF
+
+    IF a < 0 THEN
+        WRITE 3;
+    ENDIF
+
+    IF a > 1 THEN
+        WRITE 4;
+    ENDIF
+
+    IF a >= 0 THEN
+        WRITE 5;
+    ENDIF
+
+    IF a <= 10 THEN
+        WRITE 6;
+    ENDIF
+
+    WRITE 222;
+    a := 10;
+    b := 5;
+    c := 1;
+    d := 12;
+
+    IF a <= 10 THEN
+        WRITE 1;
+        IF b != 5 THEN
+            WRITE 3;
+        ELSE
+            WRITE 4;
+            IF c > 0 THEN
+                WRITE 5;
+                IF d = 13 THEN
+                    WRITE 6;
+                ELSE
+                    WRITE 7;
+                    IF a < 11 THEN
+                        WRITE 8;
+                    ENDIF
+                    IF d >= 100 THEN
+                        WRITE 9;
+                    ELSE
+                        WRITE 10;
+                    ENDIF
+                ENDIF
+            ENDIF
+        ENDIF
+    ELSE
+        WRITE 2;
+    ENDIF
+END

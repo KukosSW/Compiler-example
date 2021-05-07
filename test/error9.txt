@@ -1,0 +1,5 @@
+BEGIN
+  FOR i FROM 0 TO 9 DO
+    i := i + 1;
+  ENDFOR
+END

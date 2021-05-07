@@ -1,0 +1,1 @@
+BLAD: Zly zakres tablicy b w linii 2

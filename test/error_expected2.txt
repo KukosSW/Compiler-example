@@ -1,0 +1,1 @@
+BLAD: Redeklaracja zmiennej a w linii 2

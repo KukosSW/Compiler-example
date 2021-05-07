@@ -1,0 +1,6 @@
+DECLARE
+  a, b(-10:-20)
+BEGIN
+  a := 3;
+  WRITE a;
+END

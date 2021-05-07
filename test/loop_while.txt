@@ -1,0 +1,93 @@
+DECLARE
+    a, b, c
+BEGIN
+    a := 10;
+    WHILE a = 11 DO
+        WRITE a;
+    ENDWHILE
+
+    WHILE a != 10 DO
+        WRITE a;
+    ENDWHILE
+
+    WHILE a > 10 DO
+        WRITE a;
+    ENDWHILE
+
+    WHILE a < 10 DO
+        WRITE a;
+    ENDWHILE
+
+    WHILE a >= 11 DO
+        WRITE a;
+    ENDWHILE
+
+    WHILE a <= 9 DO
+        WRITE a;
+    ENDWHILE
+
+    WRITE 111;
+    c := 0;
+    b := c / a;
+    WHILE b = 0 DO
+        c := c + 1;
+        b := c / a;
+        WRITE b;
+        WRITE c;
+    ENDWHILE
+
+    WRITE 222;
+    a := 0;
+    WHILE a != 10 DO
+        WRITE a;
+        a := a + 1;
+    ENDWHILE
+
+    WRITE 333;
+    a := 10;
+    WHILE a > 1 DO
+        WRITE a;
+        a := a - 1;
+    ENDWHILE
+
+    WRITE 444;
+    a := 1;
+    WHILE a < 10 DO
+        WRITE a;
+        a := a * 2;
+    ENDWHILE
+
+    WRITE 555;
+    a := 10;
+    WHILE a >= 1 DO
+        WRITE a;
+        a := a / 2;
+    ENDWHILE
+
+    WRITE 666;
+    a := 1;
+    WHILE a <= 10 DO
+        WRITE a;
+        a := a + 1;
+    ENDWHILE
+
+    WRITE 777;
+
+    a := 1;
+    WHILE a < 10 DO
+        b := a * 2;
+        WHILE b <= 32 DO
+            c := 5;
+            WHILE c != 0 DO
+                WRITE c;
+                c := c - 1;
+            ENDWHILE
+            WRITE b;
+            b := b * 2;
+        ENDWHILE
+        WRITE a;
+        a := a + 1;
+    ENDWHILE
+
+    WRITE 888;
+END

@@ -1,0 +1,1 @@
+BLAD: Uzycie zmiennej b bez inicjalizacji w linii 6

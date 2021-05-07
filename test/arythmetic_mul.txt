@@ -1,0 +1,59 @@
+DECLARE
+    t(10:1000000), a, b,c
+BEGIN
+    a := 5 * 10;
+    WRITE a;
+
+    a := 10 * 0;
+    WRITE a;
+
+    a := 0 * 10;
+    WRITE a;
+
+    a := 0 * 0;
+    WRITE a;
+
+    a := 10 * 15;
+    WRITE a;
+
+    b := a * 10;
+    WRITE b;
+
+    c := a * b;
+    WRITE c;
+
+    a := a * c;
+    WRITE a;
+
+    b := b * b;
+    WRITE b;
+
+    WRITE 0;
+
+    t(10) := 2 * 1;
+    WRITE t(10);
+
+    t(11) := 3 * t(10);
+    WRITE t(11);
+
+    t(12) := t(11) * t(10);
+    WRITE t(12);
+
+    a := 13;
+    t(a) := t(12) * t(11);
+    WRITE t(a);
+
+    b := a;
+    a := a + 1;
+    t(a) := t(b) * t(12);
+    WRITE t(a);
+
+    c := b;
+    b := a;
+    a := a + 1;
+    t(a) := t(b) * t(c);
+    WRITE t(a);
+
+    t(c) := t(c) * t(c);
+    WRITE t(c);
+END
